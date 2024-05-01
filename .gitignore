@@ -1,4 +1,6 @@
-.idea
-target
-*.class 
-*.jar
+.DS_Store
+.idea/
+target/
+out/
+*.class
+*.iml
