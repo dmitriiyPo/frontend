@@ -9,17 +9,14 @@ body{
 }
 
 .header__container{
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 16px;
     margin: 0 auto;
     position: relative;
     display: flex;
     max-width: 956px;
     width: auto;
     height: 50px;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -29,8 +26,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0 0 0 360px;
-    gap: 0 200px;
+    gap: 200px;
 }
 
 .element{
@@ -43,25 +39,16 @@ body{
     white-space: nowrap;
 }
 
-
 .element__reg{
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0071f0;
     color: #fff;
     letter-spacing: 2px;
 }
 
-.header__button{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #0071f0;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.header__button:hover{
+.element__reg:hover{
     background-color: rgba(0, 113, 240, 0.7);
 }
 

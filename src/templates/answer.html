@@ -3,12 +3,12 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>survey/questions</title>
-        <link rel="stylesheet" href="../styles/questions.css">
+        <title>survey/answer</title>
+        <link rel="stylesheet" href="../styles/answer.css">
 
         <!-- шрифты -->
 
-        <script defer src="../scripts/button_send.js"></script>
+        <script defer src="../scripts/"></script>
     </head>
 
     <body>
@@ -38,14 +38,14 @@
         </header>
 
 
-        <form action="#" method="post" class="form" id="form__button__send">
+        <form action="#" method="post" class="form" id="form">
 
             <h1 class="form__title">Questionnaires.number</h1>
 
             
             <div class="form__group__text">
                 <h2 class="group__name">Question.number</h2>
-                <input tabindex="1" type="text" id="answer__one" class="form__input" placeholder="Your answer">
+                <input tabindex="1" type="text" class="form__input" placeholder="Your answer">
             </div>
 
             
@@ -57,17 +57,17 @@
 
                     <div class="radio__values">
                         Variant №1
-                        <input tabindex="2" type="radio" id="answer__two" value="1" name="nameradio" class="form__input" placeholder="Your answer">
+                        <input checked tabindex="2" type="radio" value="1" name="nameradio" class="form__input" placeholder="Your answer">
                     </div>
 
                     <div class="radio__values">
                         Variant №2
-                        <input tabindex="3" type="radio" id="answer__three" value="2" name="nameradio" class="form__input" placeholder="Your answer">
+                        <input tabindex="3" type="radio" value="2" name="nameradio" class="form__input" placeholder="Your answer">
                     </div>
                     
                     <div class="radio__values">
                         Variant №3
-                        <input tabindex="4" type="radio" id="answer__four" value="3" name="nameradio" class="form__input" placeholder="Your answer">
+                        <input tabindex="4" type="radio" value="3" name="nameradio" class="form__input" placeholder="Your answer">
                     </div>
                    
                 </div>
@@ -83,29 +83,27 @@
 
                     <div class="checkbox">
                         1
-                        <input tabindex="5" type = 'checkbox' id="answer__five" name="checkbox1">
+                        <input checked tabindex="5" type = 'checkbox' name="checkbox1">
                     </div>
 
                     <div class="checkbox">
                         2
-                        <input tabindex="6" type = 'checkbox' id="answer__six" name="checkbox2">
+                        <input tabindex="6" type = 'checkbox' name="checkbox2">
                     </div>
 
                     <div class="checkbox">
                         3
-                        <input tabindex="7" type = 'checkbox' id="answer__seven" name="checkbox3">
+                        <input tabindex="7" type = 'checkbox' name="checkbox3">
                     </div>
     
                     <div class="checkbox">
                         4
-                        <input tabindex="8" type = 'checkbox' id="answer__eight" name="checkbox4">
+                        <input tabindex="8" type = 'checkbox' name="checkbox4">
                     </div>
     
                  </div>
                 
             </div>
-
-            <button tabindex="9" type="submit" class="form__button" id="button"><a class="button__login" href="../templates/formHasBeenSent.html">Send</a></button>
 
         </form>
 

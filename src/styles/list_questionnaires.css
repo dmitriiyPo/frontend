@@ -79,12 +79,11 @@ body{
     list-style-type: none;
     justify-content: center;
     align-items: center;
-
 }
 
 .questionnaire{
     display: flex;
-    gap: 500px;
+    gap: 300px;
     margin-bottom: 50px;
 }
 
@@ -121,4 +120,16 @@ body{
     background-color: rgba(0, 113, 240, 0.7);
 }
 
+.questionnaire__answer{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
 
+.questionnaire__answer:hover{
+    background-color: rgba(0, 113, 240, 0.7);
+}
