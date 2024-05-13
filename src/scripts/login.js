@@ -1,52 +1,39 @@
 
-let form;
 
-const handleFormSubmit = (ev) => {
-    ev.preventDefault();
+document.getElementById('form__login').addEventListener('submit', function(event) {
+    event.preventDefault()
+   
 
-    POSTRequest(serializeFrom(form));
-}
+    let email = document.getElementById('email_log').value
+    let password = document.getElementById('password_log').value
 
-const serializeFrom = (form) => {
-    const elements = form.elements;
+    const users = { email: email, password: password }
 
-    const dataForm = {
-        "data" : {
-            "email": elements.email.value,
-            "password": elements.password.value,
-        }
-    }
-    return dataForm;
-}
-
-const POSTRequest = (data) => {
-    fetch('http://127.0.0.1:5500/templates/listOfQuestionnaires.html', {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json;charset=utf-8"
-        },
-        body: JSON.stringify(data)
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    form = document.getElementById("form__login");
-    form.addEventListener("submit", handleFormSubmit);
+    localStorage.setItem('users', JSON.stringify(users));
 
     
+
+    fetch('https://10.1.5.65/api/personal/users/', {
+    
+        method: 'POST', 
+        headers: new Headers({
+            "Authorization": localStorage.getItem('token'),
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
+            "X-Requested-With": "XMLHttpRequest",
+        }),
+         body: {
+            "email": email,
+            "password": password
+         }
+    })
+    .then((response) => response.json())
+    .then(responseData => { localStorage.setItem('token') })
+    .catch(error => { console.log(error); });
+            
 })
 
-// async mounted() {
-//     const token = localStorage.getItem('token')
 
-//     if () {
-//         await fetch('https://10.1.5.65/api/personal/users/', {
-//             method: 'GET', 
-//             headers: {
-//                 Authorization: `Bearer ${token}`,
-//             }
-//         });
-//     } else {
 
-//     }
-// }
+
+

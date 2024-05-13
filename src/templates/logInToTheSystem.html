@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="../styles/logInStyles.css">
 
         <!-- шрифты -->
-
-        <script defer src="../scripts/login.js"></script>
     </head>
 
     <body>
@@ -32,25 +30,27 @@
 
         <div class="box">
 
-            <form action="#" method="post" class="form" id="form__login">
+            <form action="/submit" method="GET" class="form" id="form__login">
 
                 <h1 class="form__title">Login</h1>
 
                 <div class="form__group">
-                    <input tabindex="1" type="email" id="email"  name="email" class="form__input" placeholder=" ">
+                    <input tabindex="1" type="email" id="email_log"  name="email" class="form__input" placeholder=" ">
                     <label class="form__label">Email</label>
                 </div>
 
                 <div class="form__group">
-                    <input tabindex="2" type="password" id="password" name="password" class="form__input" placeholder=" ">
+                    <input tabindex="2" type="password" id="password_log" name="password" class="form__input" placeholder=" ">
                     <label class="form__label">Password</label>
                 </div>
 
-                <button type="submit" class="form__button"><a class="button__login" href="../templates/listOfQuestionnaires.html">Login</a></button>
+                <button class="form__button" id="button__log" ><a class="button__login">Login</a></button>
 
             </form>
 
         </div>
+
+        <script src="../scripts/login.js"></script>
 
     </body>
 
