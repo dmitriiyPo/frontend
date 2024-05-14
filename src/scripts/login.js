@@ -1,8 +1,8 @@
 
 
 document.getElementById('form__login').addEventListener('submit', function(event) {
-    event.preventDefault()
-   
+    
+    
 
     let email = document.getElementById('email_log').value
     let password = document.getElementById('password_log').value
@@ -10,6 +10,10 @@ document.getElementById('form__login').addEventListener('submit', function(event
     const users = { email: email, password: password }
 
     localStorage.setItem('users', JSON.stringify(users));
+
+    if ((email.length === 0) || (password.length === 0)){
+        event.preventDefault()
+    }
 
     
 
@@ -28,7 +32,7 @@ document.getElementById('form__login').addEventListener('submit', function(event
          }
     })
     .then((response) => response.json())
-    .then(responseData => { localStorage.setItem('token') })
+    .then(responseData => { localStorage.setItem('token', responseData.token) })
     .catch(error => { console.log(error); });
             
 })

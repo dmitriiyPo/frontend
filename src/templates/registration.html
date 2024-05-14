@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="../styles/registration.css">
 
         <!-- шрифты -->
-
-        <script defer src="../scripts/"></script>
     </head>
 
     <body>
@@ -22,7 +20,7 @@
                 </li>
 
                 <li class="list__element">
-                    <a class="element__reg" href="../templates/logInToTheSystem.html">Login</a>
+                    <a class="element__reg" href="../logInToTheSystem.html">Login</a>
                 </li>
                 
             </ul>
@@ -31,31 +29,33 @@
 
 
         <div class="box">
-
-            <form class="form">
+            
+            <form class="form" action="../templates/listOfQuestionnaires.html" method="GET" id="form__reg">
 
                 <h1 class="form__title">Registration</h1>
 
                 <div class="form__group">
-                    <input class="form__input" placeholder=" ">
+                    <input type="email"  id="email__reg" class="form__input" placeholder=" ">
                     <label class="form__label">Email</label>
                 </div>
 
                 <div class="form__group">
-                    <input type="password" class="form__input" placeholder=" ">
+                    <input type="password" id="password__reg" class="form__input" placeholder=" ">
                     <label class="form__label">Password</label>
                 </div>
 
                 <div class="form__group">
-                    <input type="password" class="form__input" placeholder=" ">
+                    <input type="password" id="password__reg__again" class="form__input" placeholder=" ">
                     <label class="form__label">Repeat password</label>
                 </div>
 
-                <button class="form__button"><a class="button__register" href="../templates/listOfQuestionnaires.html">Register</a></button>
+                <button class="form__button"><a class="button__register">Register</a></button>
 
             </form>
 
         </div>
+
+        <script src="../scripts/registration.js"></script>
 
     </body>
 

@@ -1,0 +1,13 @@
+server {
+    listen 80;
+
+    location / {
+        root /opt/ui;
+        index logInToTheSystem.html;
+    }
+
+    location /api/ {
+        proxy_pass http://back:9000/;
+    }
+
+}

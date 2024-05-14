@@ -1,7 +1,6 @@
 let form;
 
 const handleFormSubmit = (ev) => {
-    ev.preventDefault();
 
     POSTRequest(serializeFrom(form));
 }

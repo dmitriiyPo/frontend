@@ -42,8 +42,15 @@ body{
 
 .element__reg{
     text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     color: #fff;
-    letter-spacing: 2px;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
 }
 
 .header__button{
@@ -57,7 +64,7 @@ body{
     transition: 0.3s;
 }
 
-.header__button:hover{
+.element__reg:hover{
     background-color: rgba(0, 113, 240, 0.7);
 }
 

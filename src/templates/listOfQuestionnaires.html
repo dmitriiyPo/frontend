@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="../styles/list_questionnaires.css">
 
         <!-- шрифты -->
-
-        <script defer src="../scripts/"></script>
     </head>
 
     <body>
@@ -18,7 +16,7 @@
             <ul class="header__list">
 
                 <li class="list__element">
-                    <p class="element">User.name</p>
+                    <p class="element" id="user__email"></p>
                 </li>
 
                 <li class="list__element">
@@ -26,7 +24,7 @@
                 </li>
 
                 <li class="list__element">
-                    <button class="header__button"><a class="element__reg" href="../templates/logInToTheSystem.html">Logout</a></button>
+                    <a class="element__reg" href="../logInToTheSystem.html">Logout</a>
                 </li>
                 
             </ul>
@@ -40,39 +38,41 @@
         <ul class="list__questionnaire">
 
             <li class="questionnaire">
-                <button class="questionnaire__button"><a class="questionnaire__url" href="../templates/questions.html">Questionnaire 1</a></button>
+                <a class="questionnaire__url" href="../templates/questions.html">Questionnaire 1</a>
                 <p class="questionnaire__status">status</p>
                 <a class="questionnaire__answer" href="../templates/answer.html" >u.answer</a>
             </li>
 
             <li class="questionnaire">
-                <button class="questionnaire__button"><a class="questionnaire__url" href="../templates/questions.html">Questionnaire 2</a></button>
-                <p class="questionnaire__status">status</p>
+                <a class="questionnaire__url" href="../templates/questions.html">Questionnaire 2</a>
+                <p class="questionnaire__status__passed">passed</p>
                 <a class="questionnaire__answer" href="../templates/answer.html" >u.answer</a>
             </li>
 
             <li class="questionnaire">
-                <button class="questionnaire__button"><a class="questionnaire__url" href="../templates/questions.html">Questionnaire 3</a></button>
-                <p class="questionnaire__status">status</p>
-                <a class="questionnaire__answer" href="../templates/answer.html" >u.answer</a>
+                <a class="questionnaire__url" href="../templates/questions.html">Questionnaire 3</a>
+                <p class="questionnaire__status__not__passed">not passed</p>
+                <a class="questionnaire__answer__noactive">u.answer</a>
             </li>
 
             <li class="questionnaire">
-                <button class="questionnaire__button"><a class="questionnaire__url" href="../templates/questions.html">Questionnaire 4</a></button>
-                <p class="questionnaire__status">status</p>
-                <a class="questionnaire__answer" href="../templates/answer.html" >u.answer</a>
+                <a class="questionnaire__url" href="../templates/questions.html">Questionnaire 4</a>
+                <p class="questionnaire__status__not__passed">not passed</p>
+                <a class="questionnaire__answer__noactive">u.answer</a>
             </li>
 
             <li class="questionnaire">
-                <button class="questionnaire__button"><a class="questionnaire__url" href="../templates/questions.html">Questionnaire 5</a></button>
-                <p class="questionnaire__status">status</p>
-                <a class="questionnaire__answer" href="../templates/answer.html" >u.answer</a>
+                <a class="questionnaire__url" href="../templates/questions.html">Questionnaire 5</a>
+                <p class="questionnaire__status__not__passed">not passed</p>
+                <a class="questionnaire__answer__noactive">u.answer</a>
             </li>
 
         </ul>
 
 
         </div>
+
+        <script src="../scripts/list_questionary.js"></script>
 
     </body>
 

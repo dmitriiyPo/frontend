@@ -45,11 +45,6 @@ body{
 
 .element__reg{
     text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-.header__button{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -58,9 +53,11 @@ body{
     outline: none;
     cursor: pointer;
     transition: 0.3s;
+    letter-spacing: 2px;
+
 }
 
-.header__button:hover{
+.element__reg:hover{
     background-color: rgba(0, 113, 240, 0.7);
 }
 
@@ -91,9 +88,16 @@ body{
     text-decoration: none;
     font-size: bold;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: bold;
     white-space: nowrap;
+    background-color: #0071f0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
 }
 
 .questionnaire__status{
@@ -106,17 +110,27 @@ body{
     white-space: nowrap;
 }
 
-.questionnaire__button{
-    background-color: #0071f0;
+.questionnaire__status__passed{
+    padding: 10px 16px;
     border-radius: 5px;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
+    color: #fff;
+    background-color: #22d134;
+    letter-spacing: 1px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.questionnaire__button:hover{
+.questionnaire__status__not__passed{
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e11b2f;
+    letter-spacing: 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.questionnaire__url:hover{
     background-color: rgba(0, 113, 240, 0.7);
 }
 
@@ -127,6 +141,15 @@ body{
     background-color: #0071f0;
     outline: none;
     cursor: pointer;
+    color: #fff;
+}
+
+.questionnaire__answer__noactive{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 113, 240, 0.7);
+    outline: none;
     color: #fff;
 }
 

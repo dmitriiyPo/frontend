@@ -8,7 +8,6 @@
 
         <!-- шрифты -->
 
-        <script defer src="../scripts/button_send.js"></script>
     </head>
 
     <body>
@@ -26,11 +25,11 @@
                 </li>
 
                 <li class="list__element">
-                    <button class="header__button"><a class="element__reg" href="../templates/listOfQuestionnaires.html">Back</a></button>
+                    <a class="element__reg" href="../templates/listOfQuestionnaires.html">Back</a>
                 </li>
 
                 <li class="list__element">
-                    <button class="header__button"><a class="element__reg" href="../templates/logInToTheSystem.html">Logout</a></button>
+                    <a class="element__reg" href="../logInToTheSystem.html">Logout</a>
                 </li>
             
             </ul>
@@ -38,7 +37,7 @@
         </header>
 
 
-        <form action="#" method="post" class="form" id="form__button__send">
+        <form action="../templates/formHasBeenSent.html" method="GET" class="form" id="form__button__send">
 
             <h1 class="form__title">Questionnaires.number</h1>
 
@@ -105,9 +104,11 @@
                 
             </div>
 
-            <button tabindex="9" type="submit" class="form__button" id="button"><a class="button__login" href="../templates/formHasBeenSent.html">Send</a></button>
+            <button tabindex="9" class="form__button" id="button"><a class="button__login">Send</a></button>
 
         </form>
+
+        <script src="../scripts/button_send.js"></script>
 
     </body>
 

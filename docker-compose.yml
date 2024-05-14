@@ -1,0 +1,29 @@
+services:
+  web:
+    image: nginx
+
+    volumes:
+      - ./src/nginx/config:/etc/nginx/sites-available/ui
+      - ./src:/opt/ui/
+
+
+    ports:
+      - "8080:80"
+
+  back:
+    image: openjdk:21   
+    comand: java -jar /app.jar
+    volumes:
+      - ./     :/app.jar #скачаю репозиторий и путь к jar-нику
+    ports:
+      - "9000:8080"
+      
+    environment:
+      - DATABASE_URL=    # =как у парней и чтоб у них также было (имена)
+      - DATABASE_USERNAME=
+      - DATABASE_PASSWORD= 
+   
+   # создать папку в корне back и в корне прописать ln -s/path/to/original /path/to/link сначала ссылку на бек где он находиться
+   #в документе а потом на фронт 
+
+    
